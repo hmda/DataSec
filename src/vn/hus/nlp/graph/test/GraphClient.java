@@ -6,9 +6,12 @@ package vn.hus.nlp.graph.test;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import java.io.Reader;
 import java.io.StringReader;
 
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
@@ -21,7 +24,11 @@ import vn.hus.nlp.graph.util.GraphConnectivity;
 import vn.hus.nlp.graph.util.GraphDegree;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import vn.hus.nlp.graph.util.GraphUtilities;
+=======
+import vn.hus.nlp.graph.util.GraphTransitiveClosure;
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 import vn.hus.nlp.graph.util.GraphTransitiveClosure;
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
@@ -112,7 +119,11 @@ public class GraphClient {
 		IGraph graph = GraphIO.scanAdjacencyList("samples/list5.txt");
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		IGraph tc = GraphUtilities.getTransitiveClosure(graph);
+=======
+		IGraph tc = GraphTransitiveClosure.getTransitiveClosure(graph);
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 		IGraph tc = GraphTransitiveClosure.getTransitiveClosure(graph);
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
@@ -139,6 +150,7 @@ public class GraphClient {
 			System.out.println(isolatedVertices[i]);
 		}
 	}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	
@@ -179,6 +191,8 @@ public class GraphClient {
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 	/**
 	 * @param args
 	 */
@@ -195,8 +209,12 @@ public class GraphClient {
 //		testAdjacencyListWeightedGraph();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 //		testIsolatedVertices();
 		testProjectivity();
+=======
+		testIsolatedVertices();
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 		testIsolatedVertices();
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965

@@ -1,6 +1,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 /*
@@ -10,6 +13,9 @@
  */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
+=======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
@@ -23,8 +29,11 @@ import java.io.Writer;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import com.google.gson.Gson;
 
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
@@ -41,6 +50,7 @@ public class Filter {
             BufferedReader inputbuf = new BufferedReader(input);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             String lineRead;
             String[] temp;
             Article art = new Article();
@@ -48,11 +58,16 @@ public class Filter {
 =======
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
             char lineRead;
             int character, status, distance;
             status = 0;
             distance = 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
+=======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
@@ -60,6 +75,7 @@ public class Filter {
             FileOutputStream fos2 = new FileOutputStream(pathWrite);
             Writer output = new java.io.OutputStreamWriter(fos2,"UTF8");
             
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             while ((lineRead = inputbuf.readLine()) != null){
@@ -70,6 +86,8 @@ public class Filter {
             }
             
 =======
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
             character = inputbuf.read();
@@ -117,6 +135,9 @@ public class Filter {
                 distance = 0;
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
+=======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
@@ -127,11 +148,17 @@ public class Filter {
             System.out.println("Khong doc duoc file");
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             e.printStackTrace();
         }
     }
 }
 
+=======
+        }
+    }
+}
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
         }
     }

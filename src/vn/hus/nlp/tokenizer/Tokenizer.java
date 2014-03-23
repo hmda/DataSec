@@ -12,7 +12,10 @@ import java.util.Iterator;
 import java.util.List;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import java.util.Properties;
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
@@ -70,7 +73,11 @@ public class Tokenizer  {
 	/**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	 * A list of tokens containing the result of tokenization
+=======
+	 * A list of tokens. This contains the result of tokenization
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 	 * A list of tokens. This contains the result of tokenization
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
@@ -95,7 +102,11 @@ public class Tokenizer  {
 	/**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	 * Are ambiguities resolved? True by default.
+=======
+	 * Is ambiguities resolved? True by default.
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 	 * Is ambiguities resolved? True by default.
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
@@ -115,7 +126,11 @@ public class Tokenizer  {
 	/**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	 * Creates a tokenizer from a lexers filename and a segmenter.
+=======
+	 * Constructor
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 	 * Constructor
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
@@ -145,6 +160,7 @@ public class Tokenizer  {
 	
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	/**
 	 * Creates a tokenizer from a properties object and a segmenter. This is 
 	 * the prefered way to create a tokenizer. 
@@ -169,6 +185,8 @@ public class Tokenizer  {
 		addTokenizerListener(new SimpleProgressReporter());
 	}
 	
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
@@ -235,6 +253,7 @@ public class Tokenizer  {
 	 * Tokenize a reader. If ambiguities are not resolved, this method
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	 * selects the first segmentation for a phrase if there are more than one
 	 * segmentations. Otherwise, it selects automatically the most
 	 * probable segmentation returned by the ambiguity resolver. 
@@ -243,12 +262,17 @@ public class Tokenizer  {
 =======
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 	 * select the first segmentation for a phrase if there are more than one
 	 * segmentations. Otherwise, it selects automatically the most
 	 * probable segmentation returned by the ambiguity resolver. 
 	 */
 	public synchronized void tokenize(Reader reader) throws IOException {
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
+=======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
@@ -263,7 +287,11 @@ public class Tokenizer  {
 			// get the next token
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			TaggedWord taggedWord = getNextToken();
+=======
+			TaggedWord taggedWord = getNextToken2();
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 			TaggedWord taggedWord = getNextToken2();
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
@@ -276,12 +304,18 @@ public class Tokenizer  {
 			}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 //			// DEBUG 
 //			System.out.println("taggedWord = " + taggedWord);
 			// if this token is a phrase, we need to use a segmenter
 			// object to segment it.
 			if (taggedWord.isPhrase()) {
 //				System.out.println("taggedWord phrase = " + taggedWord);
+=======
+			// if this token is a phrase, we need to use a segmenter
+			// object to segment it.
+			if (taggedWord.isPhrase()) {
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 			// if this token is a phrase, we need to use a segmenter
 			// object to segment it.
@@ -347,6 +381,7 @@ public class Tokenizer  {
 			}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			// ok, the token has been processed,
 			// it is now reported to all registered listeners
 			fireProcess(taggedWord);
@@ -357,11 +392,16 @@ public class Tokenizer  {
 =======
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 			// ok, the token is processed
 			// we report it to all listeners
 			fireProcess(taggedWord);
 		}
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
+=======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
@@ -402,6 +442,7 @@ public class Tokenizer  {
 	/**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	 * Return the next token from the input. This old version is deprecated.
 	 * 
 	 * @return next token from the input
@@ -414,6 +455,8 @@ public class Tokenizer  {
 =======
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 	 * Return the next token from the input.
 	 * 
 	 * @return next token from the input
@@ -423,6 +466,9 @@ public class Tokenizer  {
 	@SuppressWarnings("unused")
 	private TaggedWord getNextToken() throws IOException {
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
+=======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
@@ -503,7 +549,11 @@ public class Tokenizer  {
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	private TaggedWord getNextToken() throws IOException {
+=======
+	private TaggedWord getNextToken2() throws IOException {
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 	private TaggedWord getNextToken2() throws IOException {
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
@@ -521,11 +571,17 @@ public class Tokenizer  {
 			}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			// an empty line corresponds to an empty tagged word
 			if (line.trim().length() == 0) {
 				System.err.println("Create an empty line tagged word...");
 				//return new TaggedWord(new LexerRule("return", "(\\^\\$)"), "\n");
 				return new TaggedWord(new LexerRule("return"), "\n");
+=======
+			// an empty line:
+			if (line.length() == 0) {
+				return new TaggedWord("\n");
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 			// an empty line:
 			if (line.length() == 0) {
@@ -569,6 +625,7 @@ public class Tokenizer  {
 		// 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		// check if this relates to an email address (to fix an error with email) 
 		// yes, I know that this "manual" method must be improved by a more general way.
 		// But at least, it can fix an error with email addresses at the moment. :-)
@@ -599,6 +656,8 @@ public class Tokenizer  {
 =======
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 		{
 			// check if this relates to an email address (to fix an error with email) 
 			// yes, I know that this "manual" method must be improved by an more general way.
@@ -620,6 +679,9 @@ public class Tokenizer  {
 			return token;
 		}
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
+=======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965

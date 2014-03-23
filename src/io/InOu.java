@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 package io;
 
 import java.text.DateFormat;
@@ -7,6 +8,8 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 =======
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 /*
@@ -24,6 +27,9 @@ import vn.hus.nlp.tokenizer.VietTokenizer;
 import jvntagger.POSTagger;
 import jvntagger.MaxentTagger;
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
+=======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
@@ -37,6 +43,7 @@ public class InOu {
     /**
      * @param args the command line arguments
      */
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         
@@ -75,6 +82,8 @@ public class InOu {
 =======
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
     private static String[] words = new String[31];
     private static long[] amount = new long[31];
         
@@ -92,6 +101,9 @@ public class InOu {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
+=======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965

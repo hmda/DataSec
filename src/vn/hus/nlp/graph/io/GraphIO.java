@@ -10,7 +10,10 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import java.io.Reader;
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
@@ -41,6 +44,7 @@ public final class GraphIO {
 	/**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	 * Constructs a graph from an adjacency list provided by a reader. 
 	 * @param reader a reader
 	 * @see #scanAdjacencyList(String)
@@ -50,6 +54,8 @@ public final class GraphIO {
 		IGraph graph = null;
 		BufferedReader br = new BufferedReader(reader);
 =======
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 	 * Scan a graph from an input stream reader. This method is usually invoked
@@ -62,6 +68,9 @@ public final class GraphIO {
 		IGraph graph = null;
 		BufferedReader br = new BufferedReader(inputStreamReader);
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
+=======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
@@ -76,7 +85,11 @@ public final class GraphIO {
 			} else {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 				System.err.println("The number of vertices of the graph must be positive.");
+=======
+				System.err.println("The number of vertices of the graph must > 0.");
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 				System.err.println("The number of vertices of the graph must > 0.");
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
@@ -100,7 +113,10 @@ public final class GraphIO {
 			}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			// close the isr
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
@@ -111,6 +127,7 @@ public final class GraphIO {
 		}
 		return graph;
 	}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	
@@ -128,6 +145,8 @@ public final class GraphIO {
 =======
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 
 	/**
 	 * Scan a graph from a text data file name. The data file is organised as
@@ -141,6 +160,9 @@ public final class GraphIO {
 	 * 
 	 * @param filename
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
+=======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
@@ -160,7 +182,12 @@ public final class GraphIO {
 	/**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	 * Scans a graph from a reader. 
+=======
+	 * Scan a graph from an input stream reader. This method is usually invoked
+	 * by the method {@link #scanAdjacencyMatrix(String)}.
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 	 * Scan a graph from an input stream reader. This method is usually invoked
 	 * by the method {@link #scanAdjacencyMatrix(String)}.
@@ -175,9 +202,15 @@ public final class GraphIO {
 	 */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public static IGraph scanAdjacencyMatrix(Reader reader) {
 		IGraph graph = null;
 		BufferedReader br = new BufferedReader(reader);
+=======
+	public static IGraph scanAdjacencyMatrix(InputStreamReader inputStreamReader) {
+		IGraph graph = null;
+		BufferedReader br = new BufferedReader(inputStreamReader);
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 	public static IGraph scanAdjacencyMatrix(InputStreamReader inputStreamReader) {
 		IGraph graph = null;
@@ -199,7 +232,12 @@ public final class GraphIO {
 			} else {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 				System.err.println("The number of vertices of the graph must be positive.");
+=======
+				System.err
+						.println("The number of vertices of the graph must > 0.");
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 				System.err
 						.println("The number of vertices of the graph must > 0.");
@@ -243,6 +281,7 @@ public final class GraphIO {
 	/**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	 * Scans a graph from a text data file name. The data file is organised as
 	 * follows:
 	 * <ul>
@@ -253,6 +292,8 @@ public final class GraphIO {
 	 * @param filename
 	 * @see #scanAdjacencyMatrix(Reader)
 =======
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 	 * Scan a graph from a text data file name. The data file is organised as
@@ -266,6 +307,9 @@ public final class GraphIO {
 	 * 
 	 * @param filename
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
+=======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
@@ -410,8 +454,13 @@ public final class GraphIO {
 	 * <ul>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	 * <li>The first line is the number of vertices of the graph</li> 
 	 * <li>The other lines contains triples u v w (separated by at least a blank char)
+=======
+	 * <li>The first line is the number of vertices of the graph</li> <li>The
+	 * other lines contains triples u v w (separated by at least a blank char)
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 	 * <li>The first line is the number of vertices of the graph</li> <li>The
 	 * other lines contains triples u v w (separated by at least a blank char)

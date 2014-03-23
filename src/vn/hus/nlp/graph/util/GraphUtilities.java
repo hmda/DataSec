@@ -77,10 +77,15 @@ public class GraphUtilities {
 	 *            the returned graph is a dense one or not.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	 * @return a dense graph that is implemented by an adjacency matrix graph or 
 	 * a adjacency list graph.
 	 * @see AdjacencyMatrixGraph
 	 * @see AdjacencyListGraph
+=======
+	 * @return a dense graph that is implemented by an adjacency matrix graph or
+	 * @see AdjacencyMatrixGraph
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 	 * @return a dense graph that is implemented by an adjacency matrix graph or
 	 * @see AdjacencyMatrixGraph
@@ -102,7 +107,11 @@ public class GraphUtilities {
 		// fill its edges
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		for (int u = 0; u < n; u++) {
+=======
+		for (int u = 0; u < n; u++)
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 		for (int u = 0; u < n; u++)
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
@@ -113,6 +122,7 @@ public class GraphUtilities {
 				if (g.edge(u, v)) {
 					graph.insert(new Edge(u, v));
 				}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 		}
@@ -169,6 +179,10 @@ public class GraphUtilities {
 		return true;
 	}
 	
+=======
+		return graph;
+	}
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 		return graph;
 	}

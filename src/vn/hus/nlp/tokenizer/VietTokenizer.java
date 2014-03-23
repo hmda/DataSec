@@ -9,8 +9,11 @@ package vn.hus.nlp.tokenizer;
 import java.io.File;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
@@ -21,7 +24,10 @@ import java.util.ArrayList;
 import java.util.List;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import java.util.Properties;
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
@@ -70,6 +76,7 @@ public final class VietTokenizer {
 		tokenizer = TokenizerProvider.getInstance().getTokenizer();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		createSentenceDetector();
 	}
 	
@@ -102,6 +109,11 @@ public final class VietTokenizer {
 	
 	/**
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
+=======
+	}
+	
+	/**
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 	 * Creates a sentence detector.
 	 */
 	private static void createSentenceDetector() {
@@ -109,6 +121,7 @@ public final class VietTokenizer {
 			sentenceDetector = SentenceDetectorFactory.create("vietnamese");
 		}
 	}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -138,11 +151,16 @@ public final class VietTokenizer {
 =======
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 	
 	/**
 	 * A segment method, written for integration with other tools. This method was asked 
 	 * to add by Dr. Le Anh Cuong, VNU, Hanoi. 
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
+=======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
@@ -192,6 +210,11 @@ public final class VietTokenizer {
 		if (TokenizerOptions.USE_SENTENCE_DETECTOR) {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+			// use the sentence detector
+			createSentenceDetector();
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 			// use the sentence detector
 			createSentenceDetector();
@@ -207,8 +230,13 @@ public final class VietTokenizer {
 					result.add(segment(sentence));
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 //					// add an empty line
 //					result.add("\n\n");
+=======
+					// add an empty line
+					result.add("\n\n");
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 					// add an empty line
 					result.add("\n\n");
@@ -224,7 +252,11 @@ public final class VietTokenizer {
 		} else {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			// process all the text without detecting sentences
+=======
+			// process all the text without detecting sentence
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 			// process all the text without detecting sentence
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
@@ -341,7 +373,10 @@ public final class VietTokenizer {
 	/**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	 * Gets the tokenizer.
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
@@ -354,6 +389,7 @@ public final class VietTokenizer {
 	
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	
 	/**
 	 * Gets the sentence detector.
@@ -362,6 +398,8 @@ public final class VietTokenizer {
 	public static SentenceDetector getSentenceDetector() {
 		return sentenceDetector;
 	}
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
@@ -424,8 +462,12 @@ public final class VietTokenizer {
 	        // tokenize
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 //	        VietTokenizer vietTokenizer = new VietTokenizer();
 	        VietTokenizer vietTokenizer = new VietTokenizer("tokenizer.properties");
+=======
+	        VietTokenizer vietTokenizer = new VietTokenizer();
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 	        VietTokenizer vietTokenizer = new VietTokenizer();
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965

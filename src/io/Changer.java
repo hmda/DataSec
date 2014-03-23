@@ -1,6 +1,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 /*
@@ -10,6 +13,9 @@
  */
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
+=======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
@@ -60,7 +66,11 @@ public class Changer {
                     lineWrite = lineWrite.toLowerCase();    // Chuyển thành chữ thường
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     lineWrite = lineWrite.replace("_", " "); // Loại bỏ "_"
+=======
+                    lineWrite = lineWrite.replaceAll("_", " "); // Loại bỏ "_"
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
                     lineWrite = lineWrite.replaceAll("_", " "); // Loại bỏ "_"
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
@@ -149,7 +159,11 @@ public class Changer {
         char letter;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         StringBuilder temp;
+=======
+        String temp;
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
         String temp;
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
@@ -165,6 +179,7 @@ public class Changer {
                 lenght = words[i].length();
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 temp = new StringBuilder(words[i]);
                 for (j=0; (j<lenght); j=j+2){
                     letter = temp.charAt(j);
@@ -173,12 +188,17 @@ public class Changer {
 =======
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
                 temp = new String(words[i]);
                 for (j=0; j<lenght; j=j+2){
                     letter = temp.charAt(j);
                     letter = Character.toUpperCase(letter);
                     temp = temp.replace(temp.charAt(j), letter);
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
+=======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
@@ -190,7 +210,10 @@ public class Changer {
             System.out.println("Khong doc duoc file");
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             e.printStackTrace();
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======

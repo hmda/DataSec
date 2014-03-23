@@ -9,7 +9,10 @@ import java.util.Iterator;
 import java.util.List;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import java.util.Properties;
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
@@ -102,6 +105,7 @@ public class Segmenter {
 	
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	/**
 	 * Build a segmenter with a properties object and an ambiguity resolver.  
 	 * @param properties
@@ -123,6 +127,8 @@ public class Segmenter {
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 	private void createLogger() {
 		if (logger == null) {
 			logger = Logger.getLogger(Segmenter.class.getName());
@@ -130,7 +136,10 @@ public class Segmenter {
 			logger.addHandler(new ConsoleHandler());
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 //			try {
@@ -141,6 +150,9 @@ public class Segmenter {
 //				e.printStackTrace();
 //			}
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
+=======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
@@ -232,6 +244,7 @@ public class Segmenter {
 	/**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	 * Creates an internal lexicon recognizer.
 	 * @return the DFA lexicon recognizer in use
 	 */
@@ -249,6 +262,8 @@ public class Segmenter {
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 	 * Creates an external lexicon recognizer.
 	 * @return the external lexicon recognizer 
 	 */
@@ -260,6 +275,7 @@ public class Segmenter {
 	}
 
 	/**
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 	 * Creates an external lexicon recognizer.
@@ -275,6 +291,8 @@ public class Segmenter {
 
 	
 	/**
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
@@ -390,7 +408,11 @@ public class Segmenter {
 		// result segmentations.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		String[] original = phrase.split("\\p{Space}+");
+=======
+		String[] original = phrase.split("\\s+");
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 		String[] original = phrase.split("\\s+");
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
@@ -458,7 +480,10 @@ public class Segmenter {
 	}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
