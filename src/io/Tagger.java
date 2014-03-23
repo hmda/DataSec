@@ -1,3 +1,12 @@
+<<<<<<< HEAD
+=======
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 package io;
 
 import java.io.BufferedReader;
@@ -5,7 +14,10 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.Reader;
 import java.io.Writer;
+<<<<<<< HEAD
 
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 import jvntagger.MaxentTagger;
 import jvntagger.POSTagger;
 
@@ -41,7 +53,10 @@ public class Tagger {
             output.close();
         } catch (Exception e) {
             System.out.println("Khong doc duoc file");
+<<<<<<< HEAD
             e.printStackTrace();
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
         }
     }
 }

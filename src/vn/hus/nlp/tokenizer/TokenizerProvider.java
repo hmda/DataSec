@@ -5,11 +5,14 @@
  */
 package vn.hus.nlp.tokenizer;
 
+<<<<<<< HEAD
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 import vn.hus.nlp.tokenizer.segmenter.AbstractResolver;
 import vn.hus.nlp.tokenizer.segmenter.Segmenter;
 import vn.hus.nlp.tokenizer.segmenter.UnigramResolver;
@@ -29,6 +32,7 @@ public final class TokenizerProvider {
 	/**
 	 * A lexical segmenter
 	 */
+<<<<<<< HEAD
 	private Segmenter segmenter;
 	/**
 	 * An ambiguity resolver
@@ -38,18 +42,33 @@ public final class TokenizerProvider {
 	 * The tokenizer
 	 */
 	private Tokenizer tokenizer;
+=======
+	private final Segmenter segmenter;
+	/**
+	 * An ambiguity resolver
+	 */
+	private final AbstractResolver resolver;
+	/**
+	 * The tokenizer
+	 */
+	private final Tokenizer tokenizer;
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 	/**
 	 * An instance flag
 	 */
 	private static boolean instanceFlag = false;
+<<<<<<< HEAD
 	
 	private static TokenizerProvider provider; 
 	
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 	/**
 	 * Private constructor
 	 *
 	 */
 	private TokenizerProvider() {
+<<<<<<< HEAD
 		Properties properties = new Properties();
 		try {
 			properties.load(new FileInputStream("tokenizer.properties"));
@@ -117,18 +136,37 @@ public final class TokenizerProvider {
 		// init the tokenizer
 		System.out.print("Initializing tokenizer...");
 		tokenizer = new Tokenizer(properties, segmenter);
+=======
+		// create a unigram resolver. 
+		//
+		resolver = new UnigramResolver(IConstants.UNIGRAM_MODEL);
+		// create a lexical segmenter that use the unigram resolver
+		//
+		System.out.println("Creating lexical segmenter...");
+		segmenter = new Segmenter(resolver);
+		System.out.println("Lexical segmenter created.");
+		// init the tokenizer
+		System.out.print("Initializing tokenizer...");
+		tokenizer = new Tokenizer(IConstants.LEXER_SPECIFICATION, segmenter);
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 		// Do not resolve the ambiguity.
 //		tokenizer.setAmbiguitiesResolved(false);
 		System.out.println("OK");
 	}
+<<<<<<< HEAD
 	
 	/**
 	 * Instantiate a tokenizer provider object.
+=======
+	/**
+	 * The only method to instantiate a data provider object.
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 	 * @return a provider object
 	 */
 	public static TokenizerProvider getInstance() {
 		if (!instanceFlag) {
 			instanceFlag = true;
+<<<<<<< HEAD
 			provider = new TokenizerProvider(); 
 		}
 		return provider;
@@ -158,6 +196,14 @@ public final class TokenizerProvider {
 		return provider;
 	}
 	
+=======
+			return new TokenizerProvider();
+		} else {
+			System.err.println("The tokenizer provider has already existed.");
+			return null;
+		}
+	}
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 	/**
 	 * Get the lexical segmenter
 	 * @return the lexical segmenter

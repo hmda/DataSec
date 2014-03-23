@@ -75,10 +75,15 @@ public class GraphUtilities {
 	 *            a graph
 	 * @param dense
 	 *            the returned graph is a dense one or not.
+<<<<<<< HEAD
 	 * @return a dense graph that is implemented by an adjacency matrix graph or 
 	 * a adjacency list graph.
 	 * @see AdjacencyMatrixGraph
 	 * @see AdjacencyListGraph
+=======
+	 * @return a dense graph that is implemented by an adjacency matrix graph or
+	 * @see AdjacencyMatrixGraph
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 	 */
 	public static IGraph copy(IGraph g, boolean dense) {
 		int n = g.getNumberOfVertices();
@@ -90,11 +95,16 @@ public class GraphUtilities {
 			graph = new AdjacencyListGraph(n, g.isDirected());
 		}
 		// fill its edges
+<<<<<<< HEAD
 		for (int u = 0; u < n; u++) {
+=======
+		for (int u = 0; u < n; u++)
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 			for (int v = 0; v < n; v++)
 				if (g.edge(u, v)) {
 					graph.insert(new Edge(u, v));
 				}
+<<<<<<< HEAD
 		}
 		return graph;
 	}
@@ -149,4 +159,8 @@ public class GraphUtilities {
 		return true;
 	}
 	
+=======
+		return graph;
+	}
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 }

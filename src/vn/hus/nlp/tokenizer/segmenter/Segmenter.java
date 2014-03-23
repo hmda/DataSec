@@ -7,7 +7,10 @@ package vn.hus.nlp.tokenizer.segmenter;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+<<<<<<< HEAD
 import java.util.Properties;
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 import java.util.logging.ConsoleHandler;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -94,6 +97,7 @@ public class Segmenter {
 		this.resolver = resolver;
 	}
 	
+<<<<<<< HEAD
 	/**
 	 * Build a segmenter with a properties object and an ambiguity resolver.  
 	 * @param properties
@@ -111,11 +115,23 @@ public class Segmenter {
 		this.resolver = resolver;
 	}
 	
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 	private void createLogger() {
 		if (logger == null) {
 			logger = Logger.getLogger(Segmenter.class.getName());
 			// use a console handler to trace the log
 			logger.addHandler(new ConsoleHandler());
+<<<<<<< HEAD
+=======
+//			try {
+//				logger.addHandler(new FileHandler("segmenter.log"));
+//			} catch (SecurityException e) {
+//				e.printStackTrace();
+//			} catch (IOException e) {
+//				e.printStackTrace();
+//			}
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 			logger.setLevel(Level.FINEST);
 		}
 	}
@@ -202,6 +218,7 @@ public class Segmenter {
 	}
 	
 	/**
+<<<<<<< HEAD
 	 * Creates an internal lexicon recognizer.
 	 * @return the DFA lexicon recognizer in use
 	 */
@@ -215,6 +232,8 @@ public class Segmenter {
 	}	
 	
 	/**
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 	 * Creates an external lexicon recognizer.
 	 * @return the external lexicon recognizer 
 	 */
@@ -226,6 +245,7 @@ public class Segmenter {
 	}
 
 	/**
+<<<<<<< HEAD
 	 * Creates an external lexicon recognizer.
 	 * @param properties
 	 * @return the external lexicon recognizer 
@@ -239,6 +259,8 @@ public class Segmenter {
 
 	
 	/**
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 	 * Try to connect an unconnected graph. If a graph is unconnected, we 
 	 * find all of its isolated vertices and add a "fake" transition to them. 
 	 * A vertex is called isolated if it has not any intransition.  
@@ -348,7 +370,11 @@ public class Segmenter {
 		// save the original phrase before normalizing it
 		// objective is not to change the original words of the phrase in the 
 		// result segmentations.
+<<<<<<< HEAD
 		String[] original = phrase.split("\\p{Space}+");
+=======
+		String[] original = phrase.split("\\s+");
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 		// get syllables of the phrase
 		String[] syllables = prepare(phrase);
 		// create a weighted linear graph of the phrase
@@ -408,5 +434,8 @@ public class Segmenter {
 		lexiconRecognizer.dispose();
 		externalLexiconRecognizer.dispose();
 	}
+<<<<<<< HEAD
 	
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 }

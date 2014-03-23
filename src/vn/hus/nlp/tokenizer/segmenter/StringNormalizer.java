@@ -7,7 +7,10 @@ package vn.hus.nlp.tokenizer.segmenter;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
+<<<<<<< HEAD
 import java.util.Properties;
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 
 import vn.hus.nlp.utils.UTF8FileUtility;
 
@@ -53,6 +56,7 @@ public final class StringNormalizer {
 	}
 
 	/**
+<<<<<<< HEAD
 	 * @param properties
 	 * @return an instance of the class.
 	 */
@@ -61,6 +65,8 @@ public final class StringNormalizer {
 	}
 	
 	/**
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 	 * Normalize a string.
 	 * @return a normalized string
 	 * @param s a string

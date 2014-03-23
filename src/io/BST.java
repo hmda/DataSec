@@ -1,3 +1,12 @@
+<<<<<<< HEAD
+=======
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 package io;
 
 /**
@@ -404,4 +413,7 @@ public class BST
    } // end recycle
 
 } // end class BST
+<<<<<<< HEAD
 
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
