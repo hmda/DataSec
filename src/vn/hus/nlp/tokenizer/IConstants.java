@@ -27,51 +27,10 @@ public interface IConstants {
 	/**
 	 * The Vietnamese DFA lexicon
 	 */
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 	public static final String LEXICON_DFA = "models/tokenization/automata/lexicon_dfa_minimal.xml";
-=======
-=======
->>>>>>> f5a99cbac446db1d6a12982928942bced5427965
-=======
->>>>>>> f5a99cbac446db1d6a12982928942bced5427965
-	public static final String LEXICON_DFA = "resources/automata/lexicon_dfa_minimal.xml";
-	
-	/**
-	 * Lexer specification
-	 */
-	public static final String LEXER_SPECIFICATION= "resources/lexers/lexers.xml";
-	/**
-	 * Unigram model
-	 */
-	public static final String UNIGRAM_MODEL = "resources/bigram/unigram.xml";
-	/**
-	 * Bigram model
-	 */
-	public static final String BIGRAM_MODEL = "resources/bigram/bigram.xml";
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> f5a99cbac446db1d6a12982928942bced5427965
-=======
->>>>>>> f5a99cbac446db1d6a12982928942bced5427965
-=======
->>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 	
 	/**
 	 * The named entity prefix.
 	 */
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 	public static final String NAMED_ENTITY_PREFIX = "models/tokenization/prefix/namedEntityPrefix.xml";
-=======
-	public static final String NAMED_ENTITY_PREFIX = "resources/prefix/namedEntityPrefix.xml";
->>>>>>> f5a99cbac446db1d6a12982928942bced5427965
-=======
-	public static final String NAMED_ENTITY_PREFIX = "resources/prefix/namedEntityPrefix.xml";
->>>>>>> f5a99cbac446db1d6a12982928942bced5427965
-=======
-	public static final String NAMED_ENTITY_PREFIX = "resources/prefix/namedEntityPrefix.xml";
->>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 }

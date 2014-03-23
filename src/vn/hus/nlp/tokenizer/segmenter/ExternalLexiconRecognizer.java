@@ -5,16 +5,7 @@ package vn.hus.nlp.tokenizer.segmenter;
 
 import java.util.HashSet;
 import java.util.List;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 import java.util.Properties;
-=======
->>>>>>> f5a99cbac446db1d6a12982928942bced5427965
-=======
->>>>>>> f5a99cbac446db1d6a12982928942bced5427965
-=======
->>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 import java.util.Set;
 
 import vn.hus.nlp.lexicon.LexiconUnmarshaller;
@@ -61,19 +52,10 @@ public class ExternalLexiconRecognizer extends AbstractLexiconRecognizer {
 		System.out.println("External lexicon loaded.");
 	}
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 	public ExternalLexiconRecognizer(Properties properties) {
 		this(properties.getProperty("externalLexicon"));
 	}
 	
-=======
->>>>>>> f5a99cbac446db1d6a12982928942bced5427965
-=======
->>>>>>> f5a99cbac446db1d6a12982928942bced5427965
-=======
->>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 	/* (non-Javadoc)
 	 * @see vn.hus.nlp.tokenizer.segmenter.AbstractLexiconRecognizer#accept(java.lang.String)
 	 */
