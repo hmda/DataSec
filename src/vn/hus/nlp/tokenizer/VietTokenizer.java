@@ -8,8 +8,11 @@ package vn.hus.nlp.tokenizer;
 
 import java.io.File;
 <<<<<<< HEAD
+<<<<<<< HEAD
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 import java.io.IOException;
@@ -17,7 +20,10 @@ import java.io.StringReader;
 import java.util.ArrayList;
 import java.util.List;
 <<<<<<< HEAD
+<<<<<<< HEAD
 import java.util.Properties;
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 
@@ -63,6 +69,7 @@ public final class VietTokenizer {
 	public VietTokenizer() {
 		tokenizer = TokenizerProvider.getInstance().getTokenizer();
 <<<<<<< HEAD
+<<<<<<< HEAD
 		createSentenceDetector();
 	}
 	
@@ -90,6 +97,11 @@ public final class VietTokenizer {
 	
 	/**
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
+=======
+	}
+	
+	/**
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 	 * Creates a sentence detector.
 	 */
 	private static void createSentenceDetector() {
@@ -97,6 +109,7 @@ public final class VietTokenizer {
 			sentenceDetector = SentenceDetectorFactory.create("vietnamese");
 		}
 	}
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 	/**
@@ -123,10 +136,15 @@ public final class VietTokenizer {
 	/**
 	 * A segment method, written for integration with other tools.
 =======
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 	
 	/**
 	 * A segment method, written for integration with other tools. This method was asked 
 	 * to add by Dr. Le Anh Cuong, VNU, Hanoi. 
+<<<<<<< HEAD
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
+=======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 	 * @param sentence a sentence to be segmented
 	 * @return a segmented sentence
@@ -173,6 +191,11 @@ public final class VietTokenizer {
 		StringReader reader = new StringReader(text);
 		if (TokenizerOptions.USE_SENTENCE_DETECTOR) {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+			// use the sentence detector
+			createSentenceDetector();
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 			// use the sentence detector
 			createSentenceDetector();
@@ -183,8 +206,13 @@ public final class VietTokenizer {
 					// segment the sentence
 					result.add(segment(sentence));
 <<<<<<< HEAD
+<<<<<<< HEAD
 //					// add an empty line
 //					result.add("\n\n");
+=======
+					// add an empty line
+					result.add("\n\n");
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 					// add an empty line
 					result.add("\n\n");
@@ -195,7 +223,11 @@ public final class VietTokenizer {
 			}
 		} else {
 <<<<<<< HEAD
+<<<<<<< HEAD
 			// process all the text without detecting sentences
+=======
+			// process all the text without detecting sentence
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 			// process all the text without detecting sentence
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
@@ -308,7 +340,10 @@ public final class VietTokenizer {
 	
 	/**
 <<<<<<< HEAD
+<<<<<<< HEAD
 	 * Gets the tokenizer.
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 	 * @return the tokenizer
@@ -318,6 +353,7 @@ public final class VietTokenizer {
 	}
 	
 <<<<<<< HEAD
+<<<<<<< HEAD
 	
 	/**
 	 * Gets the sentence detector.
@@ -326,6 +362,8 @@ public final class VietTokenizer {
 	public static SentenceDetector getSentenceDetector() {
 		return sentenceDetector;
 	}
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 	/**
@@ -385,8 +423,12 @@ public final class VietTokenizer {
 	        
 	        // tokenize
 <<<<<<< HEAD
+<<<<<<< HEAD
 //	        VietTokenizer vietTokenizer = new VietTokenizer();
 	        VietTokenizer vietTokenizer = new VietTokenizer("tokenizer.properties");
+=======
+	        VietTokenizer vietTokenizer = new VietTokenizer();
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 	        VietTokenizer vietTokenizer = new VietTokenizer();
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965

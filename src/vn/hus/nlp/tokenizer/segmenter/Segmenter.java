@@ -8,7 +8,10 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 <<<<<<< HEAD
+<<<<<<< HEAD
 import java.util.Properties;
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 import java.util.logging.ConsoleHandler;
@@ -98,6 +101,7 @@ public class Segmenter {
 	}
 	
 <<<<<<< HEAD
+<<<<<<< HEAD
 	/**
 	 * Build a segmenter with a properties object and an ambiguity resolver.  
 	 * @param properties
@@ -117,13 +121,18 @@ public class Segmenter {
 	
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 	private void createLogger() {
 		if (logger == null) {
 			logger = Logger.getLogger(Segmenter.class.getName());
 			// use a console handler to trace the log
 			logger.addHandler(new ConsoleHandler());
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 //			try {
 //				logger.addHandler(new FileHandler("segmenter.log"));
 //			} catch (SecurityException e) {
@@ -131,6 +140,9 @@ public class Segmenter {
 //			} catch (IOException e) {
 //				e.printStackTrace();
 //			}
+<<<<<<< HEAD
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
+=======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 			logger.setLevel(Level.FINEST);
 		}
@@ -219,6 +231,7 @@ public class Segmenter {
 	
 	/**
 <<<<<<< HEAD
+<<<<<<< HEAD
 	 * Creates an internal lexicon recognizer.
 	 * @return the DFA lexicon recognizer in use
 	 */
@@ -234,6 +247,8 @@ public class Segmenter {
 	/**
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 	 * Creates an external lexicon recognizer.
 	 * @return the external lexicon recognizer 
 	 */
@@ -245,6 +260,7 @@ public class Segmenter {
 	}
 
 	/**
+<<<<<<< HEAD
 <<<<<<< HEAD
 	 * Creates an external lexicon recognizer.
 	 * @param properties
@@ -259,6 +275,8 @@ public class Segmenter {
 
 	
 	/**
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 	 * Try to connect an unconnected graph. If a graph is unconnected, we 
@@ -371,7 +389,11 @@ public class Segmenter {
 		// objective is not to change the original words of the phrase in the 
 		// result segmentations.
 <<<<<<< HEAD
+<<<<<<< HEAD
 		String[] original = phrase.split("\\p{Space}+");
+=======
+		String[] original = phrase.split("\\s+");
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 		String[] original = phrase.split("\\s+");
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
@@ -435,7 +457,10 @@ public class Segmenter {
 		externalLexiconRecognizer.dispose();
 	}
 <<<<<<< HEAD
+<<<<<<< HEAD
 	
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 }

@@ -1,11 +1,17 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
 
+<<<<<<< HEAD
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
+=======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 package io;
 
@@ -53,7 +59,11 @@ public class Changer {
                     lineWrite = temp[0];
                     lineWrite = lineWrite.toLowerCase();    // Chuyển thành chữ thường
 <<<<<<< HEAD
+<<<<<<< HEAD
                     lineWrite = lineWrite.replace("_", " "); // Loại bỏ "_"
+=======
+                    lineWrite = lineWrite.replaceAll("_", " "); // Loại bỏ "_"
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
                     lineWrite = lineWrite.replaceAll("_", " "); // Loại bỏ "_"
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
@@ -138,7 +148,11 @@ public class Changer {
         int i, j, lenght;
         char letter;
 <<<<<<< HEAD
+<<<<<<< HEAD
         StringBuilder temp;
+=======
+        String temp;
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
         String temp;
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
@@ -150,17 +164,23 @@ public class Changer {
                 output.write(words[i] + "\t");
                 lenght = words[i].length();
 <<<<<<< HEAD
+<<<<<<< HEAD
                 temp = new StringBuilder(words[i]);
                 for (j=0; (j<lenght); j=j+2){
                     letter = temp.charAt(j);
                     letter = Character.toUpperCase(letter);
                     temp.setCharAt(j, letter);
 =======
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
                 temp = new String(words[i]);
                 for (j=0; j<lenght; j=j+2){
                     letter = temp.charAt(j);
                     letter = Character.toUpperCase(letter);
                     temp = temp.replace(temp.charAt(j), letter);
+<<<<<<< HEAD
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
+=======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
                 }
                 output.write(temp + "\t" + amount[i] + "\n");
@@ -169,7 +189,10 @@ public class Changer {
         } catch (Exception e) {
             System.out.println("Khong doc duoc file");
 <<<<<<< HEAD
+<<<<<<< HEAD
             e.printStackTrace();
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
         }

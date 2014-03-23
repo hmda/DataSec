@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <project name="vn.hus.nlp.tokenizer" basedir="." default="jar">
 
 	<property name="version" value="4.1.1" />
@@ -150,6 +151,8 @@
 <tar tarfile="${dist.dir}/${ant.project.name}-${version}-src.tar.gz" basedir="${dist.src.dir}" compression="gzip" />
 </target>
 =======
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- You may freely edit this file. See commented blocks below for -->
 <!-- some examples of how to customize the build. -->
@@ -222,5 +225,8 @@
     nbproject/build-impl.xml file. 
 
     -->
+<<<<<<< HEAD
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
+=======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 </project>

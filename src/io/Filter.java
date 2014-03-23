@@ -1,11 +1,17 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
 
+<<<<<<< HEAD
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
+=======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 package io;
 
@@ -16,8 +22,11 @@ import java.io.Reader;
 import java.io.Writer;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 import com.google.gson.Gson;
 
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 /**
@@ -31,20 +40,27 @@ public class Filter {
             Reader input = new java.io.InputStreamReader(fos1, "UTF8");
             BufferedReader inputbuf = new BufferedReader(input);
 <<<<<<< HEAD
+<<<<<<< HEAD
             String lineRead;
             String[] temp;
             Article art = new Article();
             Gson gson = new Gson();
 =======
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
             char lineRead;
             int character, status, distance;
             status = 0;
             distance = 0;
+<<<<<<< HEAD
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
+=======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
             
             FileOutputStream fos2 = new FileOutputStream(pathWrite);
             Writer output = new java.io.OutputStreamWriter(fos2,"UTF8");
             
+<<<<<<< HEAD
 <<<<<<< HEAD
             while ((lineRead = inputbuf.readLine()) != null){
                  temp = lineRead.split("\t");
@@ -54,6 +70,8 @@ public class Filter {
             }
             
 =======
+=======
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
             character = inputbuf.read();
             while (character != -1){
                 //System.out.println("OK");
@@ -98,6 +116,9 @@ public class Filter {
                 character = inputbuf.read();
                 distance = 0;
             }
+<<<<<<< HEAD
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
+=======
 >>>>>>> f5a99cbac446db1d6a12982928942bced5427965
             input.close();
             output.close();
@@ -105,11 +126,17 @@ public class Filter {
         } catch (Exception e) {
             System.out.println("Khong doc duoc file");
 <<<<<<< HEAD
+<<<<<<< HEAD
             e.printStackTrace();
         }
     }
 }
 
+=======
+        }
+    }
+}
+>>>>>>> f5a99cbac446db1d6a12982928942bced5427965
 =======
         }
     }
